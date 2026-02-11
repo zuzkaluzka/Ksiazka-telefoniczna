@@ -9,6 +9,10 @@ namespace ConsoleApp12
             Contact contact = ContactCollector.ContactDetails();
 
             FileHelper.AddToFile(contact);
+            FileHelper.PhoneExists(contact);
+
+            Console.WriteLine("Numer telefonu juz istnieje");
+
         }
     }
 }
