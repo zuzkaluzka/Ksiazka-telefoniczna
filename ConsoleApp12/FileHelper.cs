@@ -18,19 +18,6 @@ namespace ConsoleApp12
             
             
         }
-        public static bool PhoneExists(Contact contact)
-        {
-            using StreamReader reader = new StreamReader("dane.txt");
-            string line;
-            while ((line = reader.ReadLine()) != null)
-            {
-                if (line.Contains($"nr_telefonu: {contact.PhoneNumber}"))
-                {
-                    return true;
-                }
-            }
-            reader.Close();
-            return false;
-        }
+       
     }
 }
