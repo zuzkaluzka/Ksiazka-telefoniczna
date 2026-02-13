@@ -12,19 +12,16 @@ namespace ConsoleApp12
         {
             if(PhoneExists.CheckPhone(contact))
             {
-
                 Console.WriteLine("Numer telefonu juz istnieje, czy chcesz go nadpisać? (t/n)");
                 string answer = Console.ReadLine();
 
                 if (answer == "t")
                 {
-
                     PhoneExists.UpdateContact(contact);
                     Console.WriteLine("Numer został zaktualizowany");
                 }
                 else if (answer == "n")
                 {
-
                     Console.WriteLine("Numer nie został zapisany, bo kontakt już istnieje");
                 }
             }

@@ -12,11 +12,8 @@ namespace ConsoleApp12
         {
             using StreamWriter writer = new StreamWriter("dane.txt", append: true);
 
-            writer.WriteLine($"imie: {contact.Name}, nazwisko: {contact.Surname}, nr_telefonu: {contact.PhoneNumber}");
-            writer.Close();
-
-            
-            
+            writer.WriteLine($"{contact.PhoneNumber}-{contact.Name} {contact.Surname}");
+            writer.Close();  
         }
        
     }

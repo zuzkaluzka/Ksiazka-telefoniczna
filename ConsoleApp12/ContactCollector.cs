@@ -9,13 +9,14 @@ namespace ConsoleApp12
     internal class ContactCollector
     {
         public static Contact ContactDetails()
-        {
+        {            
+            Console.WriteLine("Podaj nr telefonu: ");
+            int phone_number = int.Parse(Console.ReadLine());
             Console.WriteLine("Podaj imię: ");
             string name = Console.ReadLine();
             Console.WriteLine("Podaj nazwisko: ");
             string surname = Console.ReadLine();
-            Console.WriteLine("Podaj nr telefonu: ");
-            int phone_number = int.Parse(Console.ReadLine());
+
 
             return new Contact
             {

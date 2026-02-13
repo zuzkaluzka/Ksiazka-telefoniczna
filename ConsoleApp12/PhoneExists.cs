@@ -15,7 +15,7 @@ namespace ConsoleApp12
             string line;
             while ((line = reader.ReadLine()) != null)
             {
-                if (line.Contains($"nr_telefonu: {contact.PhoneNumber}"))
+                if (line.Contains($"{contact.PhoneNumber}"))
                 {
                     return true;
                 }
@@ -37,9 +37,9 @@ namespace ConsoleApp12
 
             while ((line  = reader.ReadLine()) != null)
             {
-                if (line.Contains($"nr_telefonu: {contact.PhoneNumber}"))
+                if (line.Contains($"{contact.PhoneNumber}"))
                 {
-                    line = $"imie: {updatedName}, nazwisko: {updatedSurname}, nr_telefonu: {contact.PhoneNumber}";
+                    line = $"{contact.PhoneNumber}-{updatedName} {updatedSurname}";
                 }
                 lines.Add(line);
             }

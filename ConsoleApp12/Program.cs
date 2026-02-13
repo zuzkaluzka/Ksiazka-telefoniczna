@@ -6,9 +6,10 @@ namespace ConsoleApp12
     {
         static void Main(string[] args)
         {
-            Contact contact = ContactCollector.ContactDetails();
-
-            UpdateInfo.Updating(contact);
+            while (true)
+            { 
+                Menu.Options();
+            }
         }
     }
 }
